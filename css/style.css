@@ -34,7 +34,7 @@
         font-family: "Roboto", sans-serif;
         color: #434455;
         background-color: var(--white-color);
-
+        /* padding-top: 72px; */
 
 
     }
@@ -109,13 +109,23 @@
     }
 
     .header {
-        display: flex;
+        position: fixed;
+        width: 100%;
+        min-height: 72px;
+        top: 0;
+        top: left;
+        background-color: var(--white-color);
+        z-index: 10;
+
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 1px 6px rgba(46, 47, 66, 0.08);
         ;
+
+
     }
+
 
 
 
@@ -190,6 +200,11 @@
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.32px;
+    }
+
+    .backlight-page {
+        color: var(--hover-color);
+        border-bottom: 2px solid var(--hover-color);
     }
 
     .address-link {
@@ -833,6 +848,7 @@
         display: flex;
         justify-content: center;
         width: 1158px;
+        padding-top: 96px;
         margin-bottom: 72px;
     }
 
