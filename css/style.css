@@ -281,6 +281,58 @@
     }
 
 
+    /* модальное окно  */
+
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(46, 47, 66, 0.40);
+
+    }
+
+    .backdrop.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .modal {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        min-width: 410px;
+        min-height: 585px;
+
+        background-color: #fff;
+
+    }
+
+    .modal {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .btn-close {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        margin-top: 24px;
+        margin-right: 24px;
+        cursor: pointer;
+        background-color: #E7E9FC;
+    }
+
+    .svg-close-btn {
+        vertical-align: center;
+        fill: var(--primary-color);
+    }
+
 
 
 
@@ -305,44 +357,6 @@
     }
 
 
-
-
-
-
-    /* .items-goal::before {
-        content: "";
-        display: block;
-        height: 112px;
-
-        background-color: var(--secondary-color);
-
-
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 64px 64px;
-        margin-bottom: 8px;
-
-    }
-
-    .items-goal:nth-child(1)::before {
-        background-image: url(../images/main-page/antenna\ 1.svg);
-
-    }
-
-    .items-goal:nth-child(2)::before {
-        background-image: url(../images/main-page/clock\ 1.svg);
-
-    }
-
-    .items-goal:nth-child(3)::before {
-        background-image: url(../images/main-page/diagram\ 1.svg);
-
-    }
-
-    .items-goal:nth-child(4)::before {
-        background-image: url(../images/main-page/astronaut\ 1.svg);
-
-    } */
 
 
     .headline {
@@ -738,10 +752,38 @@
 
     }
 
-    .block-a {
+    .block-link {
         display: block;
+    }
+
+    /* ховер- карточки  */
+    .wrap-descr {
+        position: relative;
+    }
 
 
+    .product-descr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-color: var(--accent-color);
+        transition: 250ms;
+
+    }
+
+    .product-descr:hover {
+        opacity: 1;
+
+    }
+
+    .product-text {
+        padding-top: 40px;
+        padding-right: 30px;
+        padding-left: 30px;
+        color: var(--secondary-color);
     }
 
 
@@ -750,8 +792,8 @@
 
 
 
-    .block-a:hover,
-    .block-a:focus {
+    .block-link:hover,
+    .block-link:focus {
 
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
             0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -929,76 +971,4 @@
 
 
 
-    }
-
-    /* .footer-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 100%;
-        height: 100%;
-
-        background-color: var(--accent-color);
-        border-radius: 50%;
-
-
-    }
-
-    .footer-link:hover,
-    .footer-link:focus {
-        background-color: #31d0aa;
-    } */
-
-
-    /* модальное окно  */
-
-    .backdrop {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(46, 47, 66, 0.40);
-
-    }
-
-    .backdrop.is-hidden {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    .modal {
-        position: absolute;
-        top: 38%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        min-width: 410px;
-        min-height: 585px;
-
-        background-color: #fff;
-
-    }
-
-    .modal {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-    }
-
-    .btn-close {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.10);
-        margin-top: 24px;
-        margin-right: 24px;
-        cursor: pointer;
-        background-color: #E7E9FC;
-    }
-
-    .svg-close-btn {
-        vertical-align: center;
-        fill: var(--primary-color);
     }
