@@ -1083,7 +1083,7 @@
 
     .modal {
         position: fixed;
-        top: 50;
+        top: 0;
         left: 0;
         width: 100%;
         height: 100%;
@@ -1103,7 +1103,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%-50%) scale(1);
+        transform: translate(-50%-50%)scale(1);
         width: 408px;
         min-height: 584px;
         background: #fcfcfc;
@@ -1135,9 +1135,14 @@
 
     .modal-btn:hover,
     .modal-btn:focus {
-        background-color: #404bbf;
+        background-color: var(--hover-color);
         border: none;
 
+    }
+
+    .modal-btn:hover,
+    .modal-btn:focus.svg-close-btn {
+        fill: #ffffff;
     }
 
     .svg-close-btn {
