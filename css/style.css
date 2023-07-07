@@ -800,6 +800,7 @@
 
     .block-link {
         display: block;
+        transition: box-shadow 250ms var(--cubic-bezier);
 
 
 
@@ -817,7 +818,7 @@
 
 
 
-
+    /* 
     .product-descr {
 
         position: absolute;
@@ -835,10 +836,10 @@
 
 
 
-    }
+    } */
 
-    .product-descr:hover,
-    .product-descr:focus {
+    .wrap-descr:hover,
+    .wrap-descr:focus {
         opacity: 1;
 
 
@@ -977,7 +978,7 @@
     }
 
     .portfolio-item {
-        transition: box-shadow 250ms var(--cubic-bezier);
+
         width: calc((100% - 48px) / 3);
         margin-right: 24px;
         margin-bottom: 48px;
