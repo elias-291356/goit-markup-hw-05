@@ -868,11 +868,15 @@
 
     }
 
-    .block-link:hover,
-    .block-link:focus.product-text {
+
+
+    .block-link:hover .product-text {
         transform: translateY(0%);
     }
 
+    .block-link:focus .product-text {
+        transform: translateY(0%);
+    }
 
 
 
@@ -1133,10 +1137,16 @@
 
     }
 
-    .modal-btn:hover,
+    .modal-btn:hover {
+        background-color: var(--hover-color);
+        border: none;
+
+    }
+
     .modal-btn:focus {
         background-color: var(--hover-color);
         border: none;
+        pointer-events: all;
 
     }
 
