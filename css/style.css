@@ -331,6 +331,8 @@
 
     /* модальное окно  */
 
+    /* модальное окно  */
+
     .backdrop {
         position: fixed;
         top: 0;
@@ -823,7 +825,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.8;
+        opacity: 1;
 
         transform: translateY(100%);
         background-color: var(--accent-color);
@@ -837,7 +839,7 @@
 
     .product-descr:hover,
     .product-descr:focus {
-        opacity: 0.8;
+        opacity: 1;
 
 
 
@@ -848,7 +850,26 @@
         padding-right: 30px;
         padding-left: 30px;
         color: var(--secondary-color);
+        position: absolute;
+        top: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--secondary-color);
+        padding: 40px 32px;
+        background-color: #4d5ae5;
+        height: 100%;
+        width: 100%;
+        transform: translateY(100%);
+        transition: transform 250ms var(--cubic-bezier);
+
     }
+
+    .block-link:hover .product-text {
+        transform: translateY(0%);
+    }
+
+
 
 
 
@@ -924,9 +945,14 @@
         color: var(--accent-color);
         background-color: var(--secondary-color);
 
-        transition-property: background-color;
+        /* transition-property: background-color;
         transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+        transition:
+            color 250ms var(--cubic-bezier),
+            background-color 250ms var(--cubic-bezier),
+            border-color 250ms var(--cubic-bezier),
+            box-shadow 250ms var(--cubic-bezier);
 
     }
 
@@ -951,7 +977,7 @@
     }
 
     .portfolio-item {
-
+        transition: box-shadow 250ms var(--cubic-bezier);
         width: calc((100% - 48px) / 3);
         margin-right: 24px;
         margin-bottom: 48px;
