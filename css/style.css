@@ -1140,7 +1140,6 @@
     .modal-btn:hover {
         background-color: var(--hover-color);
         border: none;
-
     }
 
     .modal-btn:focus {
