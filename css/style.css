@@ -222,6 +222,10 @@
         border-radius: 2px;
         width: 100%;
         background-color: #404bbf;
+
+    }
+
+    .backlight-page {
         color: #404bbf;
     }
 
@@ -1142,7 +1146,7 @@
     .modal-btn:focus {
         background-color: var(--hover-color);
         border: none;
-        pointer-events: all;
+
 
     }
 
