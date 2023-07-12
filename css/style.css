@@ -35,7 +35,7 @@
         font-family: "Roboto", sans-serif;
         color: #434455;
         background-color: var(--white-color);
-        /* padding-top: 72px; */
+
 
 
     }
@@ -110,13 +110,10 @@
     }
 
     .header {
-        position: fixed;
-        width: 100%;
-        min-height: 72px;
-        top: 0;
-        top: left;
+
+
         background-color: var(--white-color);
-        z-index: 10;
+
 
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -132,7 +129,7 @@
 
     .nav {
         align-items: center;
-        margin-left: 72px;
+
 
         display: flex;
         color: var(--primary-color);
@@ -289,10 +286,10 @@
 
 
     .caption {
-
         max-width: 496px;
-        padding-bottom: 48px;
-        margin: 0 auto;
+        margin-bottom: 72px;
+        margin-right: auto;
+        margin-left: auto;
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
@@ -522,7 +519,7 @@
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--primary-color);
-        margin-top: 120px;
+
         margin-bottom: 72px;
     }
 
@@ -531,7 +528,7 @@
 
         justify-content: center;
         gap: 24px;
-        padding-bottom: 120px;
+
 
 
     }
@@ -624,7 +621,7 @@
 
     .customer-wrap {
         display: block;
-        padding-bottom: 120px;
+
 
 
     }
@@ -647,7 +644,7 @@
         gap: 24px;
         display: flex;
         justify-content: space-between;
-        padding: 16px 32px;
+
 
 
     }
@@ -798,6 +795,7 @@
     .content-wrap {
         display: block;
 
+
     }
 
     .block-link {
@@ -928,9 +926,8 @@
     .buttons-items {
         display: flex;
         justify-content: center;
-        width: 1158px;
-        padding-top: 96px;
         margin-bottom: 72px;
+
     }
 
 
@@ -1048,7 +1045,7 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #ffffff;
-        margin-left: 120px;
+
     }
 
     .social-title {
